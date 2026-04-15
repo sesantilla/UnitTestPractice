@@ -38,6 +38,12 @@ TEST(PasswordTest, quotation_case_password)
 	ASSERT_EQ(0, my_password.count_leading_characters(""));
 }
 
+TEST(PasswordTest, quotation_case_password)
+{
+	Password my_password;
+	ASSERT_EQ(0, my_password.count_leading_characters("Z"));
+}
+
 TEST(PasswordTest, has_mixed_case_password)
 {
 	Password my_password;
